@@ -39,7 +39,7 @@ def main():
     url = 'https://v2.bujidao.org/user/checkin'
     c=parse()
 
-    print(c)
+   
 
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
