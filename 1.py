@@ -1,5 +1,5 @@
 import os
 
-c=`${email}`
+c=os.environ.email
 print('hello')
 print(c)
