@@ -3,8 +3,8 @@ import json
 import os
 
 def sign():
-    email=os.environ['email']
-    passwd=os.environ['passwd']
+    email=os.environ['EMAIL']
+    passwd=os.environ['PASSWD']
     url = 'https://v2.bujidao.org/auth/login'
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
