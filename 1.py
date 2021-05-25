@@ -1,6 +1,4 @@
 import os
-c=os.environ["email"]
+c=os.environ["EMAIL"]
 print(c)
-d=''+ os.environ["email"]
-print(d)                
- 
+
