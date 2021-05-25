@@ -1,10 +1,5 @@
 import os
 
-email=os.environ['EMAIL']
-passwd=os.environ['PASSWD']
-print(email)
-e = ''+email
-p=''+passwd
-print(e,p)
-
+c=${email}
 print('hello')
+print(c)
