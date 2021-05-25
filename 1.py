@@ -1,5 +1,5 @@
 import os
 
-c=os.environ.email
+c=os.environ.EMAIL
 print('hello')
 print(c)
