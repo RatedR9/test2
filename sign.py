@@ -1,5 +1,6 @@
 import requests
 import json
+import os 
 
 def sign():
     email=os.environ["EMAIL"]
