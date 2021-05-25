@@ -2,8 +2,8 @@ import requests
 import json
 
 def sign():
-    email=process.env.email
-    passwd=process.env.passwd
+    email=process.env.EMAIL
+    passwd=process.env.PASSWD
     url = 'https://v2.bujidao.org/auth/login'
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',

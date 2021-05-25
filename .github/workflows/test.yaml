@@ -1,22 +1,22 @@
-name: test
+ 
+name: sign
 
 on:
   repository_dispatch:
   release:
-  types: published
-   push:
-     branches:
-       - main
+    types: published
+  # push:
+  #   branches:
+  #     - master
   schedule:
-    - cron: 57 22 * * *
+    - cron: 0 20 * * *
   watch:
     types: started
     
 env:
-  email: ${{ secrets.EMAIL }}
-  passwd: ${{ secrets.PASSWD }}
-  #TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-  #TG_USER_ID: ${{ secrets.TG_USER_ID }}
+  EMAIL: ${{ secrets.EMAIL }}
+  PASSWD: ${{ secrets.PASSWD }}
+  
 
 jobs:
     build:
@@ -26,7 +26,7 @@ jobs:
             - name: Checkout codes
               uses: actions/checkout@v2
               
-            - name: Use Python
+            - name: Use PY
               uses: actions/setup-python@v2
               with:
                 python-version: '3.8'
