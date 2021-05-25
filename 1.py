@@ -1,5 +1,5 @@
 import os
 
-c=${email}
+c=`${email}`
 print('hello')
 print(c)
