@@ -11,7 +11,7 @@ def sign():
     }
     data = {
         'email': ''+email,
-        'passwd': ''passwd,
+        'passwd': ''+passwd,
         'code': ''
     }
     res = requests.post(url=url,headers=headers,data=data)
