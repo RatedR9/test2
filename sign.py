@@ -11,8 +11,8 @@ def sign():
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_3_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1 Safari/605.1.15'
     }
     data = {
-        'email': ''+email,
-        'passwd': ''+passwd,
+        'email': email,
+        'passwd': passwd,
         'code': ''
     }
     res = requests.post(url=url,headers=headers,data=data)
