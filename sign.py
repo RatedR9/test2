@@ -1,10 +1,10 @@
 import requests
 import json
-
+import os
 
 def sign():
-    email=${{ secrets.EMAIL }}
-    passwd=${{ secrets.PASSWD }}
+    email=os.environ['email']
+    passwd=os.environ['passwd']
     url = 'https://v2.bujidao.org/auth/login'
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
