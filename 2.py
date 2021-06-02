@@ -47,8 +47,8 @@ def main():
     }
     res = requests.post(url=url,headers=headers)
 
-    x = [os.environ['email1'],os.environ['email2']]
-    y = [os.environ['passwd1'],os.environ['passwd2']]
+    x = [os.environ['EMAIL1'],os.environ['EMAIL2']]
+    y = [os.environ['PASSWD1'],os.environ['PASSWD2']]
     args = list(zip(x, y))
     with Pool(5) as p:
         p.starmap_async(sign,args).wait()
